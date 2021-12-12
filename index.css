@@ -291,8 +291,8 @@ iframe {
 }
 
 .textbox {
-    text-align: left;
-    width: 100vw;
+    text-align: justiy;
+    width: 98vw;
     font-size: 1.5em;
     line-height: 150%;
     word-spacing: 3px;
