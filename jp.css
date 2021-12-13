@@ -151,17 +151,17 @@ iframe {
 
 @font-face {
     font-family: FashionFetishOutline;
-    src: url('../assets/FashionFetishOutline.ttf');
+    src: url('assets/FashionFetishOutline.ttf');
 }
 
 @font-face {
     font-family: FashionFetishReg;
-    src: url('../assets/FashionFetishReg.ttf');
+    src: url('assets/FashionFetishReg.ttf');
 }
 
 @font-face {
     font-family: FashionFetishBold;
-    src: url('../assets/FashionFetishBold.ttf');
+    src: url('assets/FashionFetishBold.ttf');
 }
 
 .anipre {
@@ -178,7 +178,7 @@ iframe {
     text-shadow: 0px 0px 8px #eceff4;
     animation: breathing2 2s infinite;
     font-size: 0.82em;
-    margin-left: 13px;
+    /* margin-left: 13px; */
     /* position: revert; */
     /* display: inline; */
 }
@@ -260,7 +260,7 @@ iframe {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url("../assets/stars.png");
+    background-image: url("assets/stars.png");
     background-size: 150%;
     animation: move 180s infinite linear;
     margin: 0px;
