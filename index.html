@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+    width: auto;
+    overflow-x: hidden;
+    background-color: rgb(14, 23, 36);
+    background-image: linear-gradient(153deg,
+            rgba(14, 23, 36, 1) 14%,
+            rgba(40, 64, 98, 1) 86%);
+}
+</style>
+</head>
+<body>
+</body>
+<script>
+  fetch('http://ipinfo.io/?token=bbcf1accdbca0a')
+    .then(response => response.json())
+    .then(jsonResponse => {
+      const country = jsonResponse.country
+      console.log(country)
+      if (country == "JP") {
+        window.location.href = "https://cometopen.github.io/jp/";
+      } else {window.location.href = "https://cometopen.github.io/en/";}
+    })
+</script>
+</html>
