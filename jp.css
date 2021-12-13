@@ -124,7 +124,7 @@ iframe {
     animation: arrowBlink 2s infinite alternate;
 }
 
-#countdown, #quote {font-family: Kosugi-Regular;font-weight: 400/* text-align: center; */top:65%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;}
+#countdown, #quote {font-family: Kosugi-Regular;font-weight: 400;/* text-align: center; */top:65%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;}
 
 #quote {top: 70%;}
 .comet {
