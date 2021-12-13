@@ -124,9 +124,9 @@ iframe {
     animation: arrowBlink 2s infinite alternate;
 }
 
-#countdown, #quote {font-family: Kosugi-Regular;font-weight: 400;/* text-align: center; */top:65%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;}
+#countdown, #quote {font-family: Kosugi-Regular;font-weight: 400;/* text-align: center; */top:70%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;}
 
-#quote {top: 70%;}
+#quote {top: 75%;}
 .comet {
     font-family: Kosugi-Regular;
     color: #4db9ff;
@@ -439,4 +439,4 @@ top: 20%;
     100% {left: 120%;}
 }
 
-div, a(font-family:Kosugi-Regular);
+div, a{font-family:Kosugi-Regular};
