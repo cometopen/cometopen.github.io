@@ -95,6 +95,7 @@ html {
     color: white;
     margin-left: 5px;
     text-align: center;
+	font-size: 1em;
     /* width: 10vw; */
     /* height: auto; */
     /* min-width: 10vw; */
@@ -175,4 +176,4 @@ a:link {color:rgb(85,9,119);}
 
 a:visited {color:#04072d;}
 
-div, a{font-family:Kosugi-Regular};
+div, a{font-family:Kosugi-Regular;font-size:1.2em};
