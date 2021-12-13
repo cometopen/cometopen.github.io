@@ -440,4 +440,4 @@ top: 20%;
     100% {left: 120%;}
 }
 
-div, a(font-family:Kosugi-Regular);
+div, a{font-family:Kosugi-Regular};
