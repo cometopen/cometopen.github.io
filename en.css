@@ -426,7 +426,7 @@ iframe {
 
 #fly {
 position: absolute;
-left:-40%;
+left:-300px;
 font-family:FashionFetishBold;
 color:white;
 animation-delay: 3s;
