@@ -41,7 +41,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+@font-face {
+  font-family: Kosugi-Regular;
+  src: url(../assets/Kosugi-Regular.ttf);
+}
 a:link {color:rgb(0, 204, 255);}
 
 a:visited {color:yellow;}
