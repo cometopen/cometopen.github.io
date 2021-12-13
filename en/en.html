@@ -113,7 +113,7 @@ var quote = ['The night is going to be beautiful!',
 var suisei = ['../suisei/sui1.png','../suisei/sui2.png','../suisei/sui3.png','../suisei/sui4.png','../suisei/sui5.png','../suisei/sui6.png','../suisei/sui7.png','../suisei/sui8.png','../suisei/sui9.png','../suisei/sui10.jpg','../suisei/sui11.jpg','../suisei/sui12.jpg','../suisei/sui13.jpg','../suisei/sui14.jpg'];
 var suiSrc = ['https://www.pixiv.net/artworks/94477941','https://www.pixiv.net/artworks/94443545','https://www.pixiv.net/artworks/94443380','https://www.pixiv.net/artworks/94084810','https://twitter.com/johndoe_johnson/status/1462736984154144769','https://www.pixiv.net/artworks/87520826','https://www.pixiv.net/en/artworks/94487605','https://www.pixiv.net/en/artworks/93757314','https://www.pixiv.net/en/artworks/92849796','https://www.pixiv.net/en/artworks/92871330','https://www.pixiv.net/en/artworks/93012425','https://twitter.com/chiri_ap/status/144665453824555','https://www.pixiv.net/en/artworks/93005129','https://twitter.com/Oyazuly/status/1454010124918398986'];
 
-const random = Math.floor(Math.random() * quote.length);
+const random =  Math.floor(Math.random() * quote.length);
 if (random == 6) {document.getElementById("quote").style.animation = "spin 0.5s cubic-bezier(0.25, 0.24, 0.75, 0.72) infinite";
 document.getElementById("quote").style.left = "45%";
 document.getElementById("fly").style.animation = "suisei 4s cubic-bezier(0.25, 0.24, 0.75, 0.72)";}
