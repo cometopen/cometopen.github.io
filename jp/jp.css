@@ -137,12 +137,13 @@ iframe {
 }
 
 .bolder {
-    font-family: FashionFetishBold;
+    font-family: Kosugi-Regular;
+    font-weight: bold;
 }
 
 .head-presenter,
 .textbox {
-    font-family: FashionFetishReg;
+    font-family: Kosugi-Regular;
 }
 
 .head-presenter {
