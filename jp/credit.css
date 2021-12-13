@@ -171,7 +171,7 @@ div {
 }
 
 .comet {
-    font-family: FashionFetishOutline;
+    font-family: Kosugi-Regular;
     color: #4db9ff;
     letter-spacing: 3px;
     animation: breathing 3s infinite;
@@ -179,7 +179,8 @@ div {
 }
 
 .bolder {
-    font-family: FashionFetishBold;
+    font-family: Kosugi-Regular;
+	font-weight: bold;
 }
 
 .open {
@@ -292,3 +293,5 @@ div {
     .logo {width: 25%;height:auto;top: 7%;}
     .presenter {margin-top:1.5em;}
 }
+
+div, a{font-family:Kosugi-Regular};

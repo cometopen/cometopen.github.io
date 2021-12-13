@@ -137,13 +137,14 @@ html {
     text-decoration: none;
 }
 
-.content {font-family: FashionFetishBold;/* padding-top: 3em; */background-color: rgb(200 200 200 / 80%);/* margin-top: 2em; */padding-left: 0.5em;line-height: 3em;}
+.content {font-family: Kosugi-Regular;/* padding-top: 3em; */background-color: rgb(200 200 200 / 80%);/* margin-top: 2em; */padding-left: 0.5em;line-height: 3em;}
 
 [class*=q] {
     font-size:1.5em;
+	font-weight:bold;
 }
 
-[class*=a]{font-family: FashionFetishReg;font-size: 0.95em;}
+[class*=a]{font-size: 0.95em;}
 
 .something {width:1px; height: 1.5em; }
 
@@ -173,3 +174,5 @@ html {
 a:link {color:rgb(85,9,119);}
 
 a:visited {color:#04072d;}
+
+div, a{font-family:Kosugi-Regular};
