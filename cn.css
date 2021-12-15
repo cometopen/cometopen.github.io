@@ -164,6 +164,11 @@ iframe {
     src: url('../assets/FashionFetishBold.ttf');
 }
 
+@font-face {
+	font-family: Noto Sans TC;
+	src: url('../assets/NotoSansTC-Regular.otf');
+}
+
 .anipre {
     display: inline;
     animation: moving 0.9s ease-in-out infinite alternate;
@@ -442,3 +447,5 @@ iframe {
   }
 
 body {overflow-x: hidden;}
+
+div, a{font-family:Noto Sans TC};
