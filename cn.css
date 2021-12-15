@@ -1,0 +1,444 @@
+* {
+    /* reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: auto;
+    overflow-x: hidden;
+    background-color: rgb(14, 23, 36);
+    background-image: linear-gradient(153deg,
+            rgba(14, 23, 36, 1) 14%,
+            rgba(40, 64, 98, 1) 86%);
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+html,
+body {
+    max-width: 100%;
+}
+
+.background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*       .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .stars:before, .stars:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("stars.png");
+            background-size: 100%;
+            animation: slidex 2s infinite linear;
+        }
+
+        .stars:before {
+            right:100%;
+        } */
+/*
+        .stars:before, .stars:after {
+            background-size: 100%;
+            content: "";
+        }
+
+        .stars {
+            height: 100%;
+            width: auto;
+            animation: slidex 2s linear infinite;
+        }
+
+        @keyframes slidex {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }  
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #4254a1ab;
+        }
+
+        li {
+            float: right;
+            font-size: 1.9em;
+            border-width: 20px;
+            border: rgba(0, 0, 0, 0);
+            color: #dddddd;
+            font-family: FashionFetishBold;
+            margin-left: 10px;
+        } */
+
+
+iframe {
+    margin-top: 100vh;
+    /* move everything down */
+}
+
+.presenter {
+    text-align: center;
+    font-size: 80px;
+    position: absolute;
+    line-height: 125%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100vw; */
+}
+
+.arrow {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    width: 10%;
+    height: auto;
+    animation: arrowBlink 2s infinite alternate;
+}
+
+#countdown, #quote {font-family: FashionFetishBold; text-align: center; top:65%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;line-height:1em;}
+
+#quote {top: 70%;}
+.comet {
+    font-family: FashionFetishOutline;
+    color: #4db9ff;
+    letter-spacing: 3px;
+    animation: breathing 3s infinite;
+    font-size: 1.5em;
+    /* text-shadow: 0 0 4.8px rgba(56, 199, 235, 0.9); */
+}
+
+.bolder {
+    font-family: FashionFetishBold;
+}
+
+.head-presenter,
+.textbox {
+    font-family: FashionFetishReg;
+}
+
+.head-presenter {
+    -webkit-text-stroke-width: 0.7px;
+}
+
+@font-face {
+    font-family: FashionFetishOutline;
+    src: url('../assets/FashionFetishOutline.ttf');
+}
+
+@font-face {
+    font-family: FashionFetishReg;
+    src: url('../assets/FashionFetishReg.ttf');
+}
+
+@font-face {
+    font-family: FashionFetishBold;
+    src: url('../assets/FashionFetishBold.ttf');
+}
+
+.anipre {
+    display: inline;
+    animation: moving 0.9s ease-in-out infinite alternate;
+    position: relative;
+    color: #dddddd;
+    font-size: 0.82em;
+    margin-left: 13px;
+}
+
+.open {
+    color: #eceff4;
+    text-shadow: 0px 0px 8px #eceff4;
+    animation: breathing2 2s infinite;
+    font-size: 0.82em;
+    margin-left: 13px;
+    /* position: revert; */
+    /* display: inline; */
+}
+
+@keyframes moving {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 10px;
+    }
+
+    /* {top: 1px;} */
+}
+
+@keyframes breathing {
+    0% {
+        text-shadow: 0 0 5px rgb(0, 204, 255);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgb(0, 204, 255);
+    }
+
+    100% {
+        text-shadow: 0 0 5px rgb(0, 204, 255);
+    }
+}
+
+@keyframes breathing2 {
+    0% {
+        text-shadow: 0 0 5px #eceff4;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #eceff4;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #eceff4;
+    }
+}
+
+@keyframes arrowBlink {
+    from {
+        opacity: 20%;
+    }
+
+    to {
+        opacity: 60%;
+    }
+}
+
+.container,
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+}
+
+.container2 {
+    margin-top: 100vh;
+}
+
+.bg {
+    position: fixed;
+    overflow: hidden;
+    margin: 0px;
+    width: 100vw;
+    height: 200vh;
+}
+
+.bg:before,
+.bg:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/stars.png");
+    background-size: 150%;
+    animation: move 180s infinite linear;
+    margin: 0px;
+}
+
+.bg:before {
+    right: 100%;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.textbox,
+.boxheader {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #eceff4;
+    font-size: 34px;
+}
+
+.textbox {
+    text-align: justify;
+    width: 98vw;
+    font-size: 1.5em;
+    line-height: 150%;
+    word-spacing: 3px;
+    /* font-style: italic; */
+}
+
+.boxheader {
+    font-size: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.bot-presenter {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+}
+
+.logo {max-width: 10%;height:auto;margin-top: 2vh;margin-left: 2vw;position:absolute;}
+
+.boxHolder {width: 100vw;height: fit-content;}
+
+@media only screen and (max-width: 800px) {
+    .presenter {font-size: 60px;}
+    .logo {max-width: 20%;}
+    .boxheader {/* width: 600px; */}
+    .head-presenter {margin-bottom: 0.6em;}
+}
+
+@media only screen and (max-width: 600px) {
+    .presenter {font-size: 30px;}
+    .boxheader {
+    /* width: 100vh; */
+    font-size: 40px;
+    }
+}
+
+
+#hamnav {
+    width: 100%;
+    z-index: 10;
+  }
+  
+  #hamitems {/* display: flex; */}
+  #hamitems a {
+    flex-grow: 1;
+    /* flex-basis: 0; */
+    padding: 10px;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    /* width: 10vw; */
+    /* height: auto; */
+    /* min-width: 10vw; */
+    /* margin-left: 10px; */
+  }
+
+  
+  #hamnav label, #hamburger {display: none;}
+
+@media screen and (max-width: 768px){
+    #hamitems a {
+      /* box-sizing: border-box; */
+      /* display: block; */
+      width: 100%;
+      padding: 6px;
+      display: inline;
+    }
+   
+    #hamnav label {
+      display: inline-block;
+      color: white;
+      /* background: #a02620; */
+      font-style: normal;
+      font-size: 1.5em;
+      padding: 10px;
+    }
+  
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems {display: block;font-size: 0.75em;padding-bottom: 1em;position: absolute;margin-left: 9%;top: 20px;}
+  }
+
+  .nav {
+    /* overflow: hidden; */
+    font-family: FashionFetishBold;
+    float: right;
+}
+
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /* padding: 14px 20px; */
+    text-decoration: none;
+}
+
+.trailer {width: 600px;height: 400px;display:block;margin-left: auto;margin-right: auto;}
+@media screen and (max-width: 768px) {
+    .trailer {width: 400px;height:300px;}
+    .textbox {font-size: 1em;}
+    #countdown, #quote {font-size: 0.78em;}
+}
+
+@media screen and (max-width: 425px) {
+.trailer {width: 300px;height: 200px;}
+#countdown, #quote {font-size: 0.7em;}
+}
+
+#fly {
+    position: absolute;
+    font-family: FashionFetishBold;
+    color: white;
+    animation-delay: 3s;
+    top: 20%;
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; 
+}
+
+@keyframes suisei {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+body {overflow-x: hidden;}

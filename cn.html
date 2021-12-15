@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 主頁 - 彗星公開賽 </title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="cn.css">
+    <link rel="stylesheet" href="../modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="unselectable" id="fly">sui-chan wa, kyou mo kawaii!!</div>
+    <div class="container">
+        <div class="background-layer">
+            <div class="bg"></div>
+        </div>
+        <div class="background-layer">
+            <div class="bg"></div>
+        </div>
+    </div>
+    <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        <div class="nav" id="hamitems">
+            <a href="https://streamelements.com/eggfriedrenge/tip ">捐款</a>
+            <a href="../cn/registration">報名</a>
+            <a href="../cn/faq">常見問題</a>
+            <a href="../cn/credit">關於我們</a>
+        </div>
+      </nav>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+ <a id="imgSrc" target="_blank"> <img class="modal-content" id="img01"> </a>
+  <div id="caption"></div>
+</div>
+    <div class="presenter unselectable">
+        <div class="head-presenter"><div class="anipre">v</div><div class="anipre">t</div><div class="anipre">t</div><div class="anipre"> </div><div class="anipre">p</div><div class="anipre">r</div><div class="anipre">e</div><div class="anipre">s</div><div class="anipre">e</div><div class="anipre">n</div><div class="anipre">t</div><div class="anipre">s</div><br>
+		</div>
+        <div class="bot-presenter">
+            <a class="comet" onclick="count()">彗星</a>
+            <a class="bolder open">公開賽</a>
+            </div>
+    </div>
+    <div class="unselectable"><div id="countdown"></div><br><div id="quote"></div></div>
+    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430.22 402.75">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #eceff4;
+                    stroke-linecap: round;
+                    stroke-miterlimit: 10;
+                    stroke-width: 30px;
+                }
+            </style>
+        </defs>
+        <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <polyline class="cls-1" points="15.22 138.94 715 386.83 1415.22 138.94" />
+                <polyline class="cls-1" points="15 15 714.78 262.89 1415 15" />
+            </g>
+        </g>
+    </svg>
+    <div> <iframe class="trailer" src="https://www.youtube.com/embed/3gfm9pyEREo"
+            title="Trailer"></iframe>
+        <div class="boxHolder"><h1 class="boxheader bolder">加入戰鬥吧!</h1></div>
+        <div class="textbox">彗星公開賽是一項傾向於東方方塊玩家群體，一個擁有許多天才玩家以及高手的地區，所舉辦的TETR.IO 比賽。比賽將於日本時間 12月25日 下午3點 舉行，
+		到時將會有很多俄羅斯方塊的頂級高手參加！前3名將會獲得又我們的獎池所提供的獎金。
+		來加入我們的<a href="https://discord.gg/cometopen">Discord</a>吧。 在這裡你也能向獎池<a href="https://streamelements.com/eggfriedrenge/tip">捐款</a>。
+        </div>
+    </div>
+</body>
+<script>
+  
+    let floatArr = document.getElementsByClassName("anipre");
+    var i;
+    var v = 0;
+    for (i = 0; i < floatArr.length; i++) { v=v + 0.12; floatArr[i].style.animationDelay= /*Math.random()+"s"*/ v + 's'
+        ; } 
+ 
+var countDownDate = new Date(1640404800000);
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("countdown").innerHTML = "The comet will glow its brightest in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "<a href=\"https://www.twitch.tv/vn_tetris_tournament/\">It's time to make a wish! Join us on our Twitch.</a>";
+  }
+}, 1000);
+
+var quote = ['夜晚會很美!', 
+'繁星之夜..和你一樣美麗!', 
+'準備許願吧!',
+'漂浮在星辰之間...',
+'你的新年決心是什麼',
+'BOOM! Tetris for Jeff!',
+'轉轉轉轉轉轉轉轉轉',
+'盡你所能!',
+'來和宇宙一起飛翔吧!'];
+var suisei = ['../suisei/sui1.png','../suisei/sui2.png','../suisei/sui3.png','../suisei/sui4.png','../suisei/sui5.png','../suisei/sui6.png','../suisei/sui7.png','../suisei/sui8.png','../suisei/sui9.png','../suisei/sui10.jpg','../suisei/sui11.jpg','../suisei/sui12.jpg','../suisei/sui13.jpg','../suisei/sui14.jpg'];
+var suiSrc = ['https://www.pixiv.net/artworks/94477941','https://www.pixiv.net/artworks/94443545','https://www.pixiv.net/artworks/94443380','https://www.pixiv.net/artworks/94084810','https://twitter.com/johndoe_johnson/status/1462736984154144769','https://www.pixiv.net/artworks/87520826','https://www.pixiv.net/en/artworks/94487605','https://www.pixiv.net/en/artworks/93757314','https://www.pixiv.net/en/artworks/92849796','https://www.pixiv.net/en/artworks/92871330','https://www.pixiv.net/en/artworks/93012425','https://twitter.com/chiri_ap/status/144665453824555','https://www.pixiv.net/en/artworks/93005129','https://twitter.com/Oyazuly/status/1454010124918398986'];
+
+const random = Math.floor(Math.random() * quote.length);
+if (random == 6) {document.getElementById("quote").style.animation = "spin 0.5s cubic-bezier(0.25, 0.24, 0.75, 0.72) infinite";
+document.getElementById("quote").style.left = "45%";
+document.getElementById("fly").style.animation = "suisei 4s cubic-bezier(0.25, 0.24, 0.75, 0.72)";}
+document.getElementById("quote").innerHTML = quote[random];
+
+var modal = document.getElementById('myModal');
+const suiRand = Math.floor(Math.random() * suisei.length);
+var cometCount = 0;
+
+function count() {
+    cometCount = cometCount + 1;
+    if (cometCount == 10) {
+        displayImg();
+    }
+}
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var imgSrc = document.getElementById("imgSrc");
+function displayImg() {
+  modal.style.display = "block";
+  modalImg.src = suisei[suiRand];
+  imgSrc.href = suiSrc[suiRand];
+}
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</html>
