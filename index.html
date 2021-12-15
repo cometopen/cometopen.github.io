@@ -34,7 +34,10 @@ to {opacity: 1;}
       if (country == "JP") {
         window.location.href = "https://cometopen.github.io/jp";
       } 
-      window.location.href = "https://cometopen.github.io/en" 
+      else if (country = "CN") {
+        window.location.href = "https://cometopen.github.io/cn";
+      }
+      window.location.href = "https://cometopen.github.io/en";
     })
      .catch(err => {
     // handle errors here
