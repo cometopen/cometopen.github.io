@@ -91,12 +91,12 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  document.getElementById("countdown").innerHTML = "The comet will glow its brightest in: " + days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countdown").innerHTML = "彗星が最も明るく輝くのは: " + days + "日 " + hours + "時間 "
+  + minutes + "分 " + seconds + "秒 ";
     
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "<a href=\"https://www.twitch.tv/vn_tetris_tournament/\">It's time to make a wish! Join us on our Twitch.</a>";
+    document.getElementById("countdown").innerHTML = "<a href=\"https://www.twitch.tv/vn_tetris_tournament/\">今こそ、願いを叶えるとき Twitchチャンネルで参加しよう。</a>";
   }
 }, 1000);
 
