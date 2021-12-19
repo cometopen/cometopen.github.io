@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-html {
-    width: auto;
-    overflow-x: hidden;
-    background-color: rgb(14, 23, 36);
-    background-image: linear-gradient(153deg,
-            rgba(14, 23, 36, 1) 14%,
-            rgba(40, 64, 98, 1) 86%);
-    min-height: 100vh;
-}
 
-.appear {animation-fill-mode: forwards;
-opacity: 0;
-animation-delay: 3s;
-animation-name: appear;
-font-size:1.8em;}
-@keyframes appear {
-to {opacity: 1;}
-}
-</style>
+<head>
+  <style>
+    html {
+      width: auto;
+      overflow-x: hidden;
+      background-color: rgb(14, 23, 36);
+      background-image: linear-gradient(153deg,
+          rgba(14, 23, 36, 1) 14%,
+          rgba(40, 64, 98, 1) 86%);
+      min-height: 100vh;
+    }
+
+    .appear {
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: 3s;
+      animation-name: appear;
+      font-size: 1.8em;
+    }
+
+    @keyframes appear {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div style="color: white" class="appear">If you don't get redirected soon, turn your adblock off (we won't display ads!) or <a href="https://cometopen.github.io/en">click here</a>.</div>
+  <div style="color: white" class="appear">If you don't get redirected soon, turn your adblock off (we won't display
+    ads!) or <a href="https://cometopen.github.io/en">click here</a>.</div>
 </body>
 <script>
   fetch('https://ipinfo.io/?token=bbcf1accdbca0a')
@@ -33,16 +41,17 @@ to {opacity: 1;}
       console.log(country)
       if (country == "JP") {
         window.location.href = "https://cometopen.github.io/jp";
-      } 
-      else if (country == "CN" || country == "HK" || country == "TW") {
+      } else if (country == "CN" || country == "HK" || country == "TW") {
         window.location.href = "https://cometopen.github.io/cn";
+      } else {
+        window.location.href = "https://cometopen.github.io/en";
       }
-      window.location.href = "https://cometopen.github.io/en";
     })
-     .catch(err => {
-    // handle errors here
-    console.log(err)
-       window.location.href = "https://cometopen.github.io/en" 
-  })
+    .catch(err => {
+      // handle errors here
+      console.log(err)
+      window.location.href = "https://cometopen.github.io/en"
+    })
 </script>
+
 </html>
