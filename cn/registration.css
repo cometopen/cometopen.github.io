@@ -152,7 +152,8 @@ div {
 
   .nav {
     /* overflow: hidden; */
-    font-family: FashionFetishBold;
+    font-family: Noto Sans TC;
+    font-weight: bold;
     float: right;
 }
 

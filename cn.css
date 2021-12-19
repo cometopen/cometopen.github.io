@@ -124,11 +124,11 @@ iframe {
     animation: arrowBlink 2s infinite alternate;
 }
 
-#countdown, #quote {font-family: FashionFetishBold; text-align: center; top:65%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;line-height:1em;}
+#countdown, #quote {font-family: Noto Sans TC; font-weight: bold; text-align: center; top:65%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;line-height:1em;}
 
 #quote {top: 70%;}
 .comet {
-    font-family: FashionFetishOutline;
+    font-family: Noto Sans TC;
     color: #4db9ff;
     letter-spacing: 3px;
     animation: breathing 3s infinite;
@@ -137,12 +137,13 @@ iframe {
 }
 
 .bolder {
-    font-family: FashionFetishBold;
+    font-family: Noto Sans TC;
+    font-weight: bold;
 }
 
 .head-presenter,
 .textbox {
-    font-family: FashionFetishReg;
+    font-family: Noto Sans TC;
 }
 
 .head-presenter {

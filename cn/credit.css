@@ -141,7 +141,8 @@ img {
 
   .nav {
     /* overflow: hidden; */
-    font-family: FashionFetishBold;
+    font-family: Noto Sans TC;
+    font-weight: bold;
     float: right;
 }
 
@@ -155,7 +156,8 @@ img {
 }
 
 div {
-    font-family: FashionFetishBold;
+    font-family: Noto Sans TC;
+    font-weight: bold;
     color: white;
 }
 
@@ -176,7 +178,7 @@ div {
 }
 
 .comet {
-    font-family: FashionFetishOutline;
+    font-family: Noto Sans TC;
     color: #4db9ff;
     letter-spacing: 3px;
     animation: breathing 3s infinite;
@@ -184,7 +186,8 @@ div {
 }
 
 .bolder {
-    font-family: FashionFetishBold;
+    font-family: Noto Sans TC;
+    font-weight: bold;
 }
 
 .open {
