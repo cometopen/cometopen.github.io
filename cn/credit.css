@@ -89,6 +89,11 @@ img {
     src: url('../assets/FashionFetishBold.ttf');
 }
 
+@font-face {
+	font-family: 'Noto Sans TC';
+	src: url('../assets/NotoSansTC-Regular.otf');
+}
+
 #hamnav {
     width: 100%;
     z-index: 10;
@@ -292,3 +297,5 @@ div {
     .logo {width: 25%;height:auto;top: 7%;}
     .presenter {margin-top:1.5em;}
 }
+
+div, a{font-family:Noto Sans TC};

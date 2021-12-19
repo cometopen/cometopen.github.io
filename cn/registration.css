@@ -82,6 +82,11 @@ html {
     src: url('../assets/FashionFetishBold.ttf');
 }
 
+@font-face {
+	font-family: 'Noto Sans TC';
+	src: url('../assets/NotoSansTC-Regular.otf');
+}
+
 div {
     font-family: FashionFetishBold;
     color: white;
@@ -177,3 +182,5 @@ div {
     .presenter {margin-top:1em;}
     .head {margin-top: 1em;}
 }
+
+div, a{font-family:Noto Sans TC};

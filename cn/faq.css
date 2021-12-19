@@ -82,6 +82,11 @@ html {
     src: url('../assets/FashionFetishBold.ttf');
 }
 
+@font-face {
+	font-family: 'Noto Sans TC';
+	src: url('../assets/NotoSansTC-Regular.otf');
+}
+
 #hamnav {
     width: 100%;
     z-index: 10;
@@ -173,3 +178,5 @@ html {
 a:link {color:rgb(85,9,119);}
 
 a:visited {color:#04072d;}
+
+div, a{font-family:Noto Sans TC};
