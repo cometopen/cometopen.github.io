@@ -1,0 +1,179 @@
+.background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container,
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+}
+
+.container2 {
+    margin-top: 100vh;
+}
+
+.bg {
+    position: fixed;
+    overflow: hidden;
+    margin: 0px;
+    width: 100vw;
+    height: 200vh;
+}
+
+.bg:before,
+.bg:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/stars.png");
+    background-size: 150%;
+    animation: move 180s infinite linear;
+    margin: 0px;
+}
+
+.bg:before {
+    right: 100%;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+html {
+    width: auto;
+    overflow-x: hidden;
+    background-color: rgb(14, 23, 36);
+    background-image: linear-gradient(153deg,
+            rgba(14, 23, 36, 1) 14%,
+            rgba(40, 64, 98, 1) 86%);
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: FashionFetishOutline;
+    src: url('../assets/FashionFetishOutline.ttf');
+}
+
+@font-face {
+    font-family: FashionFetishReg;
+    src: url('../assets/FashionFetishReg.ttf');
+}
+
+@font-face {
+    font-family: FashionFetishBold;
+    src: url('../assets/FashionFetishBold.ttf');
+}
+
+div {
+    font-family: FashionFetishBold;
+    color: white;
+}
+
+.content {
+    line-height: 2em; 
+}
+
+.register {width: fit-content;margin-left: auto;margin-right: auto;font-size: 2.5em;padding: 0.8em;margin-top: 0.5em;background-color: rgb(4 8 14 / 53%);}
+
+.head {
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding-top: 1em;
+}
+
+#hamnav {
+    width: 100%;
+    z-index: 10;
+  }
+  
+  #hamitems {/* display: flex; */}
+  #hamitems a {
+    flex-grow: 1;
+    /* flex-basis: 0; */
+    padding: 10px;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+	font-size: 1em;
+    /* width: 10vw; */
+    /* height: auto; */
+    /* min-width: 10vw; */
+    /* margin-left: 10px; */
+  }
+
+  
+  #hamnav label, #hamburger {display: none;}
+
+@media screen and (max-width: 768px){
+    #hamitems a {
+      /* box-sizing: border-box; */
+      /* display: block; */
+      width: 100%;
+      padding: 6px;
+      display: inline;
+    }
+   
+    #hamnav label {
+      display: inline-block;
+      color: white;
+      /* background: #a02620; */
+      font-style: normal;
+      font-size: 1.5em;
+      padding: 10px;
+    }
+  
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems {display: block;font-size: 0.75em;padding-bottom: 1em;position: absolute;margin-left: 9%;top: 20px;}
+  }
+
+  .nav {
+    /* overflow: hidden; */
+    font-family: FashionFetishBold;
+    float: right;
+}
+
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /* padding: 14px 20px; */
+    text-decoration: none;
+}
+
+.subContent {padding-top: 1em;
+padding-left:0.6em;}
+
+.logo {width: 10%;height:auto;position: absolute;top: 1vh;left: 1vh;}
+
+@media screen and (max-width: 768px) {
+    .logo {width:15%;height:auto;top: 8%;}
+}
+
+@media screen and (max-width: 425px) {
+    .logo {width: 25%;height:auto;top: 7%;}
+    .presenter {margin-top:1em;}
+    .head {margin-top: 1em;}
+}
+
+div, a{font-family:Kosugi-Regular;font-size:1.2em};
