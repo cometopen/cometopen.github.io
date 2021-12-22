@@ -83,7 +83,7 @@ html {
 }
 
 div {
-    font-family: FashionFetishBold;
+    font-family: 'IBM Plex Sans KR Bold';
     color: white;
 }
 
@@ -148,7 +148,7 @@ div {
 
   .nav {
     /* overflow: hidden; */
-    font-family: FashionFetishBold;
+    font-family: 'IBM Plex Sans KR Bold';
     float: right;
 }
 
@@ -176,4 +176,4 @@ padding-left:0.6em;}
     .head {margin-top: 1em;}
 }
 
-div, a{font-family:Kosugi-Regular;font-size:1.2em};
+div, a{font-family:'IBM Plex Sans KR Regular';font-size:1.2em};

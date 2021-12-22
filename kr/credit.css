@@ -136,8 +136,7 @@ img {
 
   .nav {
     /* overflow: hidden; */
-    font-family: Kosugi-Regular;
-    font-weight: bold;
+    font-family: 'IBM Plex Sans KR Bold';
     float: right;
 }
 
@@ -151,8 +150,7 @@ img {
 }
 
 div {
-    font-family: Kosugi-Regular;
-    font-weight: bold;
+    font-family: 'IBM Plex Sans KR Bold';
     color: white;
 }
 
@@ -173,7 +171,7 @@ div {
 }
 
 .comet {
-    font-family: Kosugi-Regular;
+    font-family: 'IBM Plex Sans KR Regular';
     color: #4db9ff;
     letter-spacing: 3px;
     animation: breathing 3s infinite;
@@ -181,8 +179,7 @@ div {
 }
 
 .bolder {
-    font-family: Kosugi-Regular;
-	font-weight: bold;
+    font-family: 'IBM Plex Sans KR Bold';
 }
 
 .open {
@@ -297,4 +294,4 @@ div {
     .presenter {margin-top:1.5em;}
 }
 
-div, a{font-family:Kosugi-Regular;font-size:1.2em};
+div, a{font-family:'IBM Plex Sans KR Regular';font-size:1.2em};

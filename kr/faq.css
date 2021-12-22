@@ -138,7 +138,7 @@ html {
     text-decoration: none;
 }
 
-.content {font-family: Kosugi-Regular;/* padding-top: 3em; */background-color: rgb(200 200 200 / 80%);/* margin-top: 2em; */padding-left: 0.5em;line-height: 3em;}
+.content {font-family: 'IBM Plex Sans KR Regular';/* padding-top: 3em; */background-color: rgb(200 200 200 / 80%);/* margin-top: 2em; */padding-left: 0.5em;line-height: 3em;}
 
 [class*=q] {
     font-size:1.5em;
@@ -155,10 +155,10 @@ html {
     .content{line-height: 2em;}
 }
 
-.faq {margin-left:auto;margin-right:auto;width: fit-content;font-family: 'FashionFetishBold';padding-bottom: 0.5em;color: white;text-shadow: 0px 0px 5px white;font-size: 3em;margin-top: 0.5em;}
+.faq {margin-left:auto;margin-right:auto;width: fit-content;font-family: 'IBM Plex Sans KR Bold';padding-bottom: 0.5em;color: white;text-shadow: 0px 0px 5px white;font-size: 3em;margin-top: 0.5em;}
 .nav {
     /* overflow: hidden; */
-    font-family: FashionFetishBold;
+    font-family: 'IBM Plex Sans KR Bold';
     float: right;
 }
 
@@ -176,4 +176,4 @@ a:link {color:rgb(85,9,119);}
 
 a:visited {color:#04072d;}
 
-div, a{font-family:Kosugi-Regular;font-size:1.2em};
+div, a{font-family:'IBM Plex Sans KR Regular';font-size:1.2em};

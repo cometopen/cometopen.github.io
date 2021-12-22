@@ -45,6 +45,17 @@ table {
   font-family: Kosugi-Regular;
   src: url(assets/Kosugi-Regular.ttf);
 }
+
+@font-face {
+	font-family:  'IBM Plex Sans KR Regular';
+	src: url(assets/IBMPlexSansKR-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans KR Bold';
+	src: url(assets/IBMPlexSansKR-Bold);
+}
+
 a:link {color:rgb(0, 204, 255);}
 
 a:visited {color:yellow;}

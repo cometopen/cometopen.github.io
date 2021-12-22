@@ -94,7 +94,7 @@ body {
             border-width: 20px;
             border: rgba(0, 0, 0, 0);
             color: #dddddd;
-            font-family: FashionFetishBold;
+            font-family: IBM Plex Sans KR Bold;
             margin-left: 10px;
         } */
 
@@ -124,11 +124,11 @@ iframe {
     animation: arrowBlink 2s infinite alternate;
 }
 
-#countdown, #quote {font-family: Kosugi-Regular;font-weight: 400;text-align: center;top:70%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;}
+#countdown, #quote {font-family: 'IBM Plex Sans KR Regular';text-align: center;top:70%;color:#dddddd;position:absolute;/* margin-left: auto; *//* margin-right: auto; */transform: translate(-50%, -50%);left: 50%;width: fit-content;}
 
 #quote {top: 75%;}
 .comet {
-    font-family: Kosugi-Regular;
+    font-family: 'IBM Plex Sans KR Regular';
     color: #4db9ff;
     letter-spacing: 3px;
     animation: breathing 3s infinite;
@@ -137,12 +137,12 @@ iframe {
 }
 
 .bolder {
-    font-family: Kosugi-Regular;
+    font-family: 'IBM Plex Sans KR Regular';
 }
 
 .head-presenter,
 .textbox {
-    font-family: Kosugi-Regular;
+    font-family: 'IBM Plex Sans KR Regular';
 }
 
 .head-presenter {
@@ -401,7 +401,7 @@ iframe {
 
   .nav {
     /* overflow: hidden; */
-    font-family: FashionFetishBold;
+    font-family: 'IBM Plex Sans KR Bold';
     float: right;
 }
 
@@ -428,7 +428,7 @@ iframe {
 
 #fly {
     position: absolute;
-    font-family: FashionFetishBold;
+    font-family: 'IBM Plex Sans KR Bold';
     color: white;
     animation-delay: 3s;
     top: 20%;
@@ -443,4 +443,4 @@ iframe {
     }
   }
 
-div, a{font-family:Kosugi-Regular};
+div, a{font-family:'IBM Plex Sans KR Regular'};
