@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title> 主ページ ・ 彗星オープン</title>
+    <title> 메인 페이지 ・ 메인 페이지 </title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="jp.css">
+    <link rel="stylesheet" href="kr.css">
     <link rel="stylesheet" href="modal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8"/>
@@ -27,10 +27,10 @@
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger"/>
         <div class="nav" id="hamitems">
-            <a href="https://streamelements.com/eggfriedrenge/tip ">寄付</a>
-            <a href="../jp/registration">登録</a>
-            <a href="../jp/faq">よくある質問</a>
-            <a href="../jp/credit">トーナメントについて</a>
+            <a href="https://streamelements.com/eggfriedrenge/tip ">기부하기</a>
+            <a href="../kr/registration">회원가입</a>
+            <a href="../kr/faq">질의 응답</a>
+            <a href="../kr/credit">소개합니다</a>
         </div>
       </nav>
 <div id="myModal" class="modal">
@@ -41,7 +41,7 @@
     <div class="presenter unselectable">
         <div class="head-presenter"><div class="anipre">v</div><div class="anipre">t</div><div class="anipre">t</div><div class="anipre">プ</div><div class="anipre">レ</div><div class="anipre">ゼ</div><div class="anipre">ン</div><div class="anipre">ツ</div><br></div>
         <div class="bot-presenter">
-            <a class="comet" onclick="count()">彗星</a><a class="bolder open">オープン</a>
+            <a class="comet" onclick="count()">메인</a><a class="bolder open">페이지</a>
             </div>
     </div>
     <div class="unselectable"><div id="countdown"></div><br><div id="quote"></div></div>
@@ -66,10 +66,10 @@
     </svg>
     <div> <iframe class="trailer" src="https://www.youtube.com/embed/3gfm9pyEREo"
             title="Trailer"></iframe>
-        <div class="boxHolder"><h1 class="boxheader bolder">戦闘に入れて！</h1></div>
-        <div class="textbox">彗星オープンは多くの優秀なプレイヤーがいる東部ブロックスタッキングプレイヤーに向けたTETR.IOのトーナメントです。
-            トーナメントは日本時間の12月25日の15時から開始されます。東部テトリスのトップローラー達が参加します。
-            上位3人のプレイヤーには賞金が与えられます。<a href="https://discord.gg/cometopen">Discord</a>で参加しましょう。また、賞金プールへの寄付は<a href="https://streamelements.com/eggfriedrenge/tip">こちら</a>で受け付けています。
+        <div class="boxHolder"><h1 class="boxheader bolder">대결에 참여하세요!</h1></div>
+        <div class="textbox">메인 페이지 은 재능있는 플레이어가 많은 지역인 동부 테트리스 플레이어를 대상으로 하는 테트리오 토너먼트 입니다. 
+            토너먼트는 12월 25일 한국 시간으로 오후 3시에 열리며, 동부 테트리스 최고의 플레이어중, 일부가 등장합니다! 상위 3명 안에 들면, 누적된 상금에 따라 상금이 수여됩니다. 
+            우리의 <a href="https://discord.gg/cometopen">디스코드</a> 채널에 참여하세요. 여기에서 상금에 <a href="https://streamelements.com/eggfriedrenge/tip">추가금</a>을 기부 할 수 있습니다.
         </div>
     </div>
 </body>
@@ -94,24 +94,24 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  document.getElementById("countdown").innerHTML = "彗星が最も明るく輝くのは: " + days + "日 " + hours + "時間 "
-  + minutes + "分 " + seconds + "秒 ";
+  document.getElementById("countdown").innerHTML = "혜성은, 이 때 가장 빛날 것 입니다: " + days + "일 " + hours + "시간 "
+  + minutes + "분 " + seconds + "초 ";
     
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "<a href=\"https://www.twitch.tv/vn_tetris_tournament/\">今こそ、願いを叶えるとき Twitchチャンネルで参加しよう。</a>";
+    document.getElementById("countdown").innerHTML = "<a href=\"https://www.twitch.tv/vn_tetris_tournament/\">소원을 빌 때입니다! Twitch에 가입하세요</a>";
   }
 }, 1000);
 
-var quote = ['今夜はきれいになりそうだね', 
-'星夜は…君みたいにきれいだよ', 
-'流れ星に願いを〜',
-'星の間に流れてる',
-'新年の望みは何でしょうか？',
+var quote = ['밤이 정말 아름다울 것 입니다!', 
+'별이 빛나는 밤.. 당신처럼 아름다워요!', 
+'소원을 빌 준비를 해!',
+'별들 사이를 맴도는…',
+'너의 새해 결심은 뭐야?',
 'BOOM! Tetris for Jeff!',
-'スピィィィィィィィィィィィィン',
-'お頑張りしましょう',
-'宇宙の中に飛んできてくれ'];
+'돌아간드아ㅏㅏㅏㅏㅏㅏㅏㅏ',
+'최고의 노력을!',
+'우주와 함께 날아와!'];
 var suisei = ['../suisei/sui1.png','../suisei/sui2.png','../suisei/sui3.png','../suisei/sui4.png','../suisei/sui5.png','../suisei/sui6.png','../suisei/sui7.png','../suisei/sui8.png','../suisei/sui9.png','../suisei/sui10.jpg','../suisei/sui11.jpg','../suisei/sui12.jpg','../suisei/sui13.jpg','../suisei/sui14.jpg'];
 var suiSrc = ['https://www.pixiv.net/artworks/94477941','https://www.pixiv.net/artworks/94443545','https://www.pixiv.net/artworks/94443380','https://www.pixiv.net/artworks/94084810','https://twitter.com/johndoe_johnson/status/1462736984154144769','https://www.pixiv.net/artworks/87520826','https://www.pixiv.net/en/artworks/94487605','https://www.pixiv.net/en/artworks/93757314','https://www.pixiv.net/en/artworks/92849796','https://www.pixiv.net/en/artworks/92871330','https://www.pixiv.net/en/artworks/93012425','https://twitter.com/chiri_ap/status/144665453824555','https://www.pixiv.net/en/artworks/93005129','https://twitter.com/Oyazuly/status/1454010124918398986'];
 
