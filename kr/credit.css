@@ -136,7 +136,8 @@ img {
 
   .nav {
     /* overflow: hidden; */
-    font-family: FashionFetishBold;
+    font-family: Kosugi-Regular;
+    font-weight: bold;
     float: right;
 }
 
@@ -150,7 +151,8 @@ img {
 }
 
 div {
-    font-family: FashionFetishBold;
+    font-family: Kosugi-Regular;
+    font-weight: bold;
     color: white;
 }
 
